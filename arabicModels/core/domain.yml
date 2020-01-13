@@ -1,0 +1,48 @@
+actions:
+- utter_cheer_up
+- utter_did_that_help
+- utter_goodbye
+- utter_greet
+- utter_happy
+- utter_iamabot
+config:
+  store_entities_as_slots: true
+entities: []
+forms: []
+intents:
+- greet:
+    ignore_entities: []
+    use_entities: true
+- goodbye:
+    ignore_entities: []
+    use_entities: true
+- affirm:
+    ignore_entities: []
+    use_entities: true
+- deny:
+    ignore_entities: []
+    use_entities: true
+- mood_great:
+    ignore_entities: []
+    use_entities: true
+- mood_unhappy:
+    ignore_entities: []
+    use_entities: true
+- bot_challenge:
+    ignore_entities: []
+    use_entities: true
+slots: {}
+templates:
+  utter_cheer_up:
+  - image: https://i.imgur.com/nGF1K8f.jpg
+    text: 'هل أعجبتك هذه الصورة؟'
+  utter_did_that_help:
+  - text: هل ساعدك ذلك؟
+  utter_goodbye:
+  - text: وداعا
+  utter_greet:
+  - text: هلا! كيفك؟
+  utter_happy:
+  - text: كيف أستطيع مساعدتك؟
+  utter_iamabot:
+  - text: أنا بوت تم تطويري من قبل شركة سيرياتل
